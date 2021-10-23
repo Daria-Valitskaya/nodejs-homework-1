@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-homework-1",
+  "version": "1.0.0",
+  "description": "my homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daria-Valitskaya/nodejs-homework-1.git"
+  },
+  "author": "Daria Valitskaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daria-Valitskaya/nodejs-homework-1/issues"
+  },
+  "homepage": "https://github.com/Daria-Valitskaya/nodejs-homework-1#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "8.3.0"
+  }
+}
