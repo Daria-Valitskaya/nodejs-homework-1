@@ -82,5 +82,11 @@
     "name": "Dasha",
     "email": "dasha@gmail.com",
     "phone": "322-22-98"
+  },
+  {
+    "id": "471edb57-d484-4346-aefd-62f59f85234d",
+    "name": "Mango",
+    "email": "mango@gmail.com",
+    "phone": "322-22-45"
   }
 ]

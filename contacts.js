@@ -19,8 +19,15 @@ async function getContactById(contactId) {
   return result;
 }
 
-function removeContact(contactId) {
-  // ...твой код
+async function removeContact(contactId) {
+  const contacts = await readList();
+  const result = contacts.reduce((newList, contact) => {
+    if (String(contact.id) !== String(contactId)) {
+      newList.push(contact);
+    }
+    return newList;
+  }, []);
+  return result;
 }
 
 async function addContact(name, email, phone) {
