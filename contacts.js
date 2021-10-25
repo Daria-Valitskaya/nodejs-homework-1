@@ -1,22 +1,34 @@
 const fs = require("fs/promises");
 const path = require("path");
 const crypto = require("crypto");
-// const contactsPath =
+const contactsPath = path.join(__dirname, "db", "contact.json");
 // fs и его методы readFile() и writeFile()
-function listContacts() {
-  // ...твой код
+async function readList() {
+  const result = await fs.readFile(contactsPath, "utf-8");
+  return JSON.parse(result);
+}
+async function listContacts() {
+  return await readList();
 }
 
-function getContactById(contactId) {
-  // ...твой код
+async function getContactById(contactId) {
+  const contacts = await readList();
+  const result = contacts.find(
+    (contact) => String(contact.id) === String(contactId)
+  );
+  return result;
 }
 
 function removeContact(contactId) {
   // ...твой код
 }
 
-function addContact(name, email, phone) {
-  // ...твой код
+async function addContact(name, email, phone) {
+  const contacts = await readList();
+  const newContact = { id: crypto.randomUUID(), name, email, phone };
+  contacts.push(newContact);
+  await fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2));
+  return newContact;
 }
 
 module.exports = {
