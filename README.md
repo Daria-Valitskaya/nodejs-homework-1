@@ -15,6 +15,9 @@ http://joxi.ru/krDQd79cgnP5ym
 node index.js --action add --name Mango --email mango@gmail.com --phone 322-22-45
 http://joxi.ru/eAOOk54S6g1nMA
 
+node index.js -a add dasha
+http://joxi.ru/DmBY67EUgDzEMr
+
 # Удаляем контакт
 
 node index.js --action remove --id=3

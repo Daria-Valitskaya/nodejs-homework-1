@@ -66,27 +66,21 @@
     "phone": "322-22-22"
   },
   {
-    "id": "6451bcf7-2d51-42a6-8683-0a0d75ff21ff",
-    "name": "Dasha",
-    "email": "dasha@gmail.com",
-    "phone": "322-22-55"
+    "id": "7c5d4e1d-7632-44ef-ab2c-324e39615081"
   },
   {
-    "id": "f20ede8c-71aa-4022-b462-34f31a9217bb",
-    "name": "Dasha",
-    "email": "dasha@gmail.com",
-    "phone": "322-22-77"
+    "id": "e6fc6005-b372-4518-b51b-77347a8d1fa7"
   },
   {
-    "id": "46e7118b-cccb-4212-8a95-c83ae7abc342",
-    "name": "Dasha",
-    "email": "dasha@gmail.com",
-    "phone": "322-22-98"
+    "id": "e961b4a7-a713-4a32-b462-9f127200a52b"
   },
   {
-    "id": "471edb57-d484-4346-aefd-62f59f85234d",
-    "name": "Mango",
-    "email": "mango@gmail.com",
-    "phone": "322-22-45"
+    "id": "eaa11d37-e0db-4b15-8b3c-484874887307"
+  },
+  {
+    "id": "c8191351-9ba8-42d4-8ef3-bbb366099222"
+  },
+  {
+    "id": "a0b32224-2d85-4dda-9868-0fafba817dcb"
   }
 ]

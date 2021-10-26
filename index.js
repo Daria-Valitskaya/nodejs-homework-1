@@ -37,6 +37,9 @@ async function invokeAction({ action, id, name, email, phone }) {
 
       case "add":
         const contact = await addContact(name, email, phone);
+        if (!contact.name?.email?.phone) {
+          return console.log(chalk.red("Please enter the data to add"));
+        }
         console.log(chalk.yellowBright("Add new contact"));
         console.table(contact);
         break;
